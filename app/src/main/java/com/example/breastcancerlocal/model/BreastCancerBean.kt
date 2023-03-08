@@ -95,7 +95,9 @@ class BreastCancerBean(c: Context) {
 	        
 	 errors.clear()
 	        
-	 	 	           if (id != "") {}
+	 	 	           if (id != "") {
+				   //ok
+				   }
 	else {
 	 	  errors.add("id cannot be empty")
 	}
