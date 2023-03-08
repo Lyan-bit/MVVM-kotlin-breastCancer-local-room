@@ -89,35 +89,15 @@ class BreastCancerCRUDViewModel constructor(context: Context): ViewModel() {
             val itemx = BreastCancer.createByPKBreastCancer(value)
             if (breastCancer.isNotEmpty()) {
                 itemx.id = breastCancer[0].id
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.age = breastCancer[0].age
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.bmi = breastCancer[0].bmi
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.glucose = breastCancer[0].glucose
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.insulin = breastCancer[0].insulin
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.homa = breastCancer[0].homa
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.leptin = breastCancer[0].leptin
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.adiponectin = breastCancer[0].adiponectin
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.resistin = breastCancer[0].resistin
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.mcp = breastCancer[0].mcp
-            }
-            if (breastCancer.isNotEmpty()) {
                 itemx.outcome = breastCancer[0].outcome
             }
             itemx
