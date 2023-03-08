@@ -82,15 +82,15 @@ class DiagnoseFragment : Fragment(), View.OnClickListener, AdapterView.OnItemSel
 
         when (v?.id) {
             R.id.diagnoseOK -> {
-                diagnoseOK(v)
+                diagnoseOK()
             }
             R.id.diagnoseCancel -> {
-                diagnoseCancel(v)
+                diagnoseCancel()
             }
         }
     }
 
-    private fun diagnoseOK (v: View?) {
+    private fun diagnoseOK () {
         diagnosebean.setclassification(diagnoseData)
         viewLifecycleOwner.lifecycleScope.launchWhenStarted  {
             if (diagnosebean.isdiagnoseerror()) {
@@ -103,7 +103,7 @@ class DiagnoseFragment : Fragment(), View.OnClickListener, AdapterView.OnItemSel
         }
     }
 
-    private fun diagnoseCancel (v: View?) {
+    private fun diagnoseCancel () {
         diagnosebean.resetData()
         diagnoseResult.text = ""
     }
