@@ -1,4 +1,4 @@
-package com.example.cloudbreastcancer.viewModel;
+package com.example.breastcancerlocal.viewModel;
 
 class OclAttribute {
 
